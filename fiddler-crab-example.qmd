@@ -1,0 +1,16 @@
+---
+title: "Fiddler Crab Sizes"
+format: html
+---
+
+## Fiddler Crab Sizes
+
+```{r}
+library(lterdatasampler)
+```
+
+```{r}
+my_data <- pie_crab
+```
+
+
