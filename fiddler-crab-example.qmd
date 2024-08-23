@@ -10,6 +10,7 @@ editor_options:
 ```{r}
 library(lterdatasampler)
 library(tidyverse)
+library(NewPackage)
 ```
 
 ```{r}
@@ -18,5 +19,9 @@ my_data <- pie_crab
 In the Quarto doc, create an exploratory (unfinalized) plot of fiddler crab carapace widths observed at the different latitudes
 ```{r}
 ggplot(data=my_data, aes(x=size,y=latitude))+geom_point()
+```
+
+```{r}
+ggplot(data=my_data, aes(x=size,y=latitude))+geom_point()+theme_eighties() 
 ```
 
