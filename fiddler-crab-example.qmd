@@ -1,16 +1,22 @@
 ---
 title: "Fiddler Crab Sizes"
 format: html
+editor_options: 
+  chunk_output_type: console
 ---
 
 ## Fiddler Crab Sizes
 
 ```{r}
 library(lterdatasampler)
+library(tidyverse)
 ```
 
 ```{r}
 my_data <- pie_crab
 ```
-
+In the Quarto doc, create an exploratory (unfinalized) plot of fiddler crab carapace widths observed at the different latitudes
+```{r}
+ggplot(data=my_data, aes(x=size,y=latitude))+geom_point()
+```
 
